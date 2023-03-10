@@ -10,11 +10,16 @@ export const HomeContainer = styled("main", {
     height: "100vh",
 })
 
-export const Product = styled("a", {
+export const Product = styled("div", {
     background: "linear-gradient(180deg, #1EA483 0%, #7465D4 100%);",
     borderRadius: 8,
     cursor: "pointer",
     overflow: "hidden",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: "0.25rem",
 
     footer: {
         display: 'flex',
@@ -24,6 +29,7 @@ export const Product = styled("a", {
         transform: "translateY(110%)",
         opacity: 0,
         transition: "all 0.2s ease-in-out",
+        width: "100%",
 
         strong: {
             flex: 1,
